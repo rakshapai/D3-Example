@@ -209,7 +209,7 @@ function main(teams) {
       var pct = (game.team[sr] * 100);
       if (pct > 1)      { pct = pct.toFixed(0).toString() + "%"; }
       else if (pct > 0) { pct = "<1%"; }
-      else              { pct = ""; }
+      else              { pct = "OUT"; }
       gameg.append("text")
           .text(pct)
           .attr("class", "pcttext")
