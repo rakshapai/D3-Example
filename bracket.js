@@ -162,7 +162,7 @@ function main(teams) {
     if (brightness > 125 || alpha < 0.15) {
       return "#333"; //black
     }
-    return "#FFF"; //white
+    return "#FF3340"; //gradient
   }
 
   function rgba(color, alpha) {
