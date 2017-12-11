@@ -1,32 +1,6 @@
 <!DOCTYPE html> 
 <html lang="en"> 
 <head>
-<style>
-#popup { color: #000; background-color: #c0c0c0; }
-#popup a, #popup a:visited {
-	position: relative;
-	display: block;
-	width: 130px;
-	line-height: 30px;
-	text-align: right;
-	padding: 0 10px;
-	margin: 0;
-	border: 1px solid #666;
-	text-decoration: none;
-	font-size: 1em;
-	font-weight: bold;
-}
-
-#popup a span {
-	display: none;
-}
-
-#popup a:hover { 
-	background-color: #e9e9e2; 
-}
-
- </style>
-
 
   <title>2016 NCAA Tournament Bracket</title>
   <meta name="description" content="2016 NCAA Tournament Men's Basketball Bracket" />
@@ -55,10 +29,17 @@
 <br>
 <br>
   <div id="col1">
-    <div id="c1s1" class="slot" data-col="1" data-game="1" style="background:red" onmouseover="this.style.background='gray';" onmouseout="this.style.background='white';">
-      <div id="popup">
-        <a href="https://rawgit.com/rakshapai/D3-Example/master/index.html"><span>Icon instead of text menu button which could be an image button with text on it.<br> The code isn't intended to work with an icon but it does work.<br> Only one link can be opened (the one on the icon button), no links are possible in this panel.<br> Use dropdown menus for several dropdown links. </span></a>
-     </div>
+    <div id="c1s1" class="slot" data-col="1" data-game="1" style="background:red" onmouseover="this.style.background='gray';" onmouseout="this.style.background='red';">
+      <table class="tableClass">
+    <tr>
+      <td>
+        <a class="hoverHereToPopUp">
+          Hover Me! 
+          <p>This is a Hover</p>
+        </a>
+      </td>
+    </tr>
+  </table> /*Just to keep the table short */
    </div>
     <div id="c1s2" class="slot" data-col="1" data-game="1"></div>
     <hr align="left"/>
