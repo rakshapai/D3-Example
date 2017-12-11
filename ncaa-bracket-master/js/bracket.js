@@ -14,7 +14,7 @@ $(document).ready(function(){
       ds = new Miso.Dataset({
           importer : Miso.Dataset.Importers.GoogleSpreadsheet,
           parser : Miso.Dataset.Parsers.GoogleSpreadsheet,
-          key : "2PACX-1vRlQs_OaYoAVBu30i-zg8XtNSuHwDcwhuXHC9bM93WXM0p8iS_CJ5BPvh-Eg8x2_Z6ifqJZwJMCh96D",
+          key : "1VCzDI-rJoTiRBOgPgcf4uVGT6GStsmCS_oQ2oDObnhk",
           worksheet : which 
       });
 
