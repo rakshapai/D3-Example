@@ -3,13 +3,13 @@
 <head>
   
 <style>
-.tooltip {
+.slot {
     position: relative;
     display: inline-block;
     border-bottom: 1px dotted black;
 }
 
-.tooltip .tooltiptext {
+.slot.tooltiptext {
     visibility: hidden;
     width: 120px;
     background-color: black;
@@ -23,7 +23,7 @@
     z-index: 1;
 }
 
-.tooltip:hover .tooltiptext {
+.slot:hover .tooltiptext {
     visibility: visible;
 }
 </style>
@@ -56,9 +56,9 @@
 <br>
   <div id="col1">
     <div id="c1s1" class="slot" data-col="1" data-game="1" style="background:red" onmouseover="this.style.background='gray';" onmouseout="this.style.background='red';">
-      <div class="tooltip">
+      
         <span class="tooltiptext">Tooltip text</span>
-      </div>
+      
     </div>
     <div id="c1s2" class="slot" data-col="1" data-game="1"></div>
     <hr align="left"/>
