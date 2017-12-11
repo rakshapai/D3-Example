@@ -2,31 +2,7 @@
 <html lang="en"> 
 <head>
   
-<style>
-.slot {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-}
 
-.slot.tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-
-.slot:hover .tooltiptext {
-    visibility: visible;
-}
-</style>
 
   <title>2016 NCAA Tournament Bracket</title>
   <meta name="description" content="2016 NCAA Tournament Men's Basketball Bracket" />
@@ -55,11 +31,7 @@
 <br>
 <br>
   <div id="col1">
-    <div id="c1s1" class="slot" data-col="1" data-game="1" style="background:red" onmouseover="this.style.background='gray';" onmouseout="this.style.background='red';">
-      
-        <span class="tooltiptext">Tooltip text</span>
-      
-    </div>
+    <div id="c1s1" class="slot" data-col="1" data-game="1" style="background:red" onmouseover="this.style.background='gray';" onmouseout="this.style.background='red';"></div>
     <div id="c1s2" class="slot" data-col="1" data-game="1"></div>
     <hr align="left"/>
 
