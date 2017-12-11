@@ -3,17 +3,11 @@
 <head>
   
 <style>
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
+div p {
+    display:none
 }
-th, td {
-    padding: 5px;
-    text-align: left;
-}
-table#t01 {
-    width: 100%;    
-    background-color: #f1f1c1;
+div:hover p {
+    display: block
 }
 </style>
 
@@ -45,15 +39,16 @@ table#t01 {
 <br>
   <div id="col1">
     <div id="c1s1" class="slot" data-col="1" data-game="1" style="background:red" onmouseover="this.style.background='gray';" onmouseout="this.style.background='red';">
-      <table id="t01" class="tableClass">
+      <table class="tableClass">
     <tr>
       <td>
         <a class="hoverHereToPopUp">
           Hover Me! 
+          <p>This is a Hover</p>
         </a>
       </td>
     </tr>
-  </table> /*Just to keep the table short */
+  </table> 
    </div>
     <div id="c1s2" class="slot" data-col="1" data-game="1"></div>
     <hr align="left"/>
