@@ -3,11 +3,28 @@
 <head>
   
 <style>
-div p {
-    display:none
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
 }
-div:hover p {
-    display: block
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
 </style>
 
@@ -24,7 +41,7 @@ div:hover p {
 
 </head>
 
-<body>
+<body text-align:center;>
   <div id="thetitle">
     <p>2016 NCAA<br /> Tournament Bracket</p>
     <p id="printbtn">Print Bracket</p>
@@ -39,16 +56,9 @@ div:hover p {
 <br>
   <div id="col1">
     <div id="c1s1" class="slot" data-col="1" data-game="1" style="background:red" onmouseover="this.style.background='gray';" onmouseout="this.style.background='red';">
-      <table class="tableClass">
-        <tr>
-          <td>
-            <a class="hoverHereToPopUp">
-              Hover Me! 
-              <p>This is a Hover</p>
-            </a>
-          </td>
-        </tr>
-      </table> 
+      <div class="tooltip"> Hover over me
+        <span class="tooltiptext">Tooltip text</span>
+      </div>
     </div>
     <div id="c1s2" class="slot" data-col="1" data-game="1"></div>
     <hr align="left"/>
